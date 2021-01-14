@@ -1,0 +1,18 @@
+/* Styles go here */
+
+body{
+  background-color:black;
+  color: black;
+}
+text {
+  font: 12px sans-serif;
+    font-weight:bold;
+}
+.circle {
+    background-color: blue;
+    height: 100%;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 200px;
+    font-size: 30px;
+}
