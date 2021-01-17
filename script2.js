@@ -9,20 +9,23 @@ var width = 1500,
     clusterPadding = 50, // separation between different-color nodes
     maxRadius = 18;
 
-//var n = 100, // total number of nodes
- //   m = 20; // number of distinct clusters
 
-var color = d3.scale.ordinal()
-      .range(["#96afc8", "#edebeb", "#DDC9DE"]);
 
+    
+        
 
 
 
 // get the json data from the file
 d3.json("r.json", function(error, data) {
 var cs = [];
+var color = d3.scale.ordinal()
+     //.domain([data])
+     .range(["#96afc8", "#edebeb", "#DDC9DE"]);
     
-
+    
+    
+    
     var n = data.length, // total number of nodes
     m = cs.length; // number of distinct clusters
 
@@ -68,14 +71,16 @@ for (var i = 0; i<n; i++){
 var force = d3.layout.force()
     .nodes(nodes)
     .size([width, height])
-    .gravity(.03)
+    .gravity(0)
     .charge(0)
     .on("tick", tick)
     .start();
 
+    
 var svg = d3.select(".layoutContainer").append("svg")
-    .attr("width", width)
-    .attr("height", height);
+    //.attr("width", width)
+    //.attr("height", height)
+.attr("viewBox", '0 0 1500 800');
     
 var theWidth = parseInt(d3.select('.layoutContainer').style('width'), 10);
 
@@ -103,15 +108,40 @@ var nodeText = svg.selectAll(".nodeText")
     .data(nodes)
     .enter() 
 .append("a")
+//.attr("style","mystyleOrig")
+.style("fill", "black")
  .attr("xlink:href", function (d) {return d.links;})
+
+ .on("click", function (d) {
+     var linkText = d.links;
+     //console.log(linkText);
+     check_visited_links(linkText);
+     
+ })
+ 
+     
+     
 .append("text")
 .attr("y", 0)
-	.attr("dy", 0)
-    .attr("transform", "translate(0,0)")
+.attr("dy", 0)
+.attr("transform", "translate(0,0)")
+
 .text(function (d) {return d.texts;})
+ .style("font-size", function(d) {
+            if ((d.texts == "Students and Supervisors") || (d.texts == "PhD Students") || (d.texts == "Institutions")) {return "20"}
+            else 	{ return "12" }
+        ;})
+
+.attr("transform", function(d) {
+            if ((d.texts == "Students and Supervisors") || (d.texts == "Institutions")) {return "translate(-53,0)"}
+            else 	{ return "translate(0,0)" }
+        ;})
+
+
 //.text(function(d) { return d.name.substring(0, d.rating / 3); })
 .call(wrap, 80)
 .attr("text-anchor", "middle")
+.attr("opacity", "0")
 
     function wrap(text, width) {
   text.each(function() {
@@ -135,6 +165,56 @@ var nodeText = svg.selectAll(".nodeText")
       }
     }
   });
+}
+
+    nodeText.transition()
+    .delay(function(d,i) { return i * 10; })
+    .duration(4700)
+    .attr('opacity', 1);
+    
+    
+    checkStorage();
+function checkStorage(){
+          
+     var visited_links = JSON.parse(localStorage.getItem('visited_links')) || [];
+//var links = document.getElementsByTagName('a');
+    
+var links = document.querySelectorAll('a');
+for (var i = 0; i < links.length; i++) {
+    var that = links[i];
+   //console.log(visited_links);
+    //console.log("ya");
+    var hrefs = that.href.baseVal;
+    var theElement = that;
+    //console.log(hrefs);
+   // console.log(theElement);
+     
+    
+    if (visited_links.indexOf(hrefs)!== -1) { 
+      // console.log("yes");
+        
+      
+      theElement.classList.add("mystyle");
+        d3.selectAll('circle').on('click', datum => {
+  console.log(datum.links); // the datum for the clicked circle
+});
+        d3.selectAll('circle').on("mouseover", function(d) {
+  //d3.select(this).attr("r", 10).style("fill", "red");
+})                  
+d3.selectAll('circle').on("mouseout", function(d) {
+ // d3.select(this).attr("r", 5.5).style("fill", "red");
+});
+        
+      //theElement.parentNode.classList.add("mystyle");
+      //d3.selectAll(theElement).style("text-decoration", "underline");
+        d3.selectAll(theElement).style("fill", "pink");
+        //d3.selectAll(theElement).parentNode.style("fill", "pink");
+          
+        
+       
+    }
+     
+    }  
 }
     
 function create_nodes(data,node_counter) {
@@ -165,10 +245,12 @@ node.transition()
     
 
 function tick(e) {
+   
     node.each(cluster(10 * e.alpha * e.alpha))
         .each(collide(.5))
         .attr("transform", function (d) {
             var k = "translate(" + d.x + "," + d.y + ")";
+        
         return k;
     });
     
@@ -178,9 +260,21 @@ function tick(e) {
             var k = "translate(" + d.x + "," + d.y + ")";
         return k;
     });
+    
 }
 
 
+
+// Move nodes toward cluster focus.
+function gravity(alpha) {
+  return function(d) {
+    d.y += (d.cy - d.y) * alpha;
+    d.x += (d.cx - d.x) * alpha;
+  };
+}
+    
+    
+    
 // Move d to be adjacent to the cluster node.
 function cluster(alpha) {
   return function(d) {
@@ -240,12 +334,9 @@ function collide(alpha) {
 }
     
 window.addEventListener('resize', resize); 
+// d3.selectAll("text").attr("opacity", "1").duration(3300);
+function resize() {}
 
-function resize() {
-    var width = window.innerWidth, height = window.innerHeight;
-    svg.attr("width", width).attr("height", height);
-    force.size([width, height]).resume();
-}
-    
+
 
 });

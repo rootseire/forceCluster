@@ -2,7 +2,7 @@
 
 body{
   background-color:black;
-  color: black;
+  color: blue;
 }
 text {
   font: 12px sans-serif;
@@ -15,4 +15,10 @@ text {
     text-align: center;
     line-height: 200px;
     font-size: 30px;
+}
+
+.mystyle{
+
+fill: #551A8B!important;
+    
 }
