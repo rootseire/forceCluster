@@ -132,11 +132,6 @@ var nodeText = svg.selectAll(".nodeText")
             else 	{ return "12" }
         ;})
 
-.attr("transform", function(d) {
-            if ((d.texts == "Students and Supervisors") || (d.texts == "Institutions")) {return "translate(-53,0)"}
-            else 	{ return "translate(0,0)" }
-        ;})
-
 
 //.text(function(d) { return d.name.substring(0, d.rating / 3); })
 .call(wrap, 80)
