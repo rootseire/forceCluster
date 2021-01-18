@@ -4,7 +4,7 @@
 
 //getWidth();
 var width = 1500, 
-    height = 800,
+    height = 700,
     padding = 1.5, // separation between same-color nodes
     clusterPadding = 50, // separation between different-color nodes
     maxRadius = 18;
@@ -76,6 +76,9 @@ var force = d3.layout.force()
     .on("tick", tick)
     .start();
 
+
+    
+    
     
 var svg = d3.select(".layoutContainer").append("svg")
     //.attr("width", width)
@@ -145,7 +148,7 @@ var nodeText = svg.selectAll(".nodeText")
         word,
         line = [],
         lineNumber = 0,
-        lineHeight = 1.1, // ems
+        lineHeight = 1, // ems
         y = text.attr("y"),
         dy = parseFloat(text.attr("dy")),
         tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
@@ -167,6 +170,16 @@ var nodeText = svg.selectAll(".nodeText")
     .duration(4700)
     .attr('opacity', 1);
     
+
+var takeout = document.querySelectorAll('tspan');
+    console.log(takeout);
+   for (var i = 0; i < takeout.length; i++) {
+       var takethis = takeout[i];
+        if (takethis.innerHTML == "") {
+            console.log("found empties");
+            takethis.parentNode.removeChild(takethis);
+        }
+    }
     
     checkStorage();
 function checkStorage(){
@@ -333,5 +346,7 @@ window.addEventListener('resize', resize);
 function resize() {}
 
 
+
+    
 
 });

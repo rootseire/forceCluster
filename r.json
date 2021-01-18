@@ -1,35 +1,49 @@
 [
-{"name":"PhD Students","rating":"0.99","division":"PhD Students", "namelink":"http://rootseire.github.io/forceCluster", "group":"1", "size":"60"},
- {"name":"Why pursue an Artistic Research PhD?","rating":"0.7","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"30"},
- {"name":"What is Artistic Research?","rating":"0.7","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"30"},
- {"name":"Applying - a Prospective Student Guide","rating":"0.7","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"30"},
+{"name":"PhD Students","rating":"0.99","division":"PhD Students", "namelink":"http://artisticdoctorateireland.com/OER/artistic-research-phd-students/", "group":"1", "size":"60"},
+ {"name":"Why pursue an Artistic Research PhD?","rating":"0.7","division":"PhD Students","namelink":"http://artisticdoctorateireland.com/OER/why-pursue-an-artistic-research-phd/", "group":"1", "size":"30"},
+ {"name":"What is Artistic Research?","rating":"0.7","division":"PhD Students","namelink":"http://artisticdoctorateireland.com/OER/what-is-artistic-research/", "group":"1", "size":"30"},
+ {"name":"Applying - a Prospective Student Guide","rating":"0.7","division":"PhD Students","namelink":"http://artisticdoctorateireland.com/OER/applying-for-an-artistic-research-phd-a-prospective-student-guide/", "group":"1", "size":"30"},
+    
  {"name":"Programmes in Ireland - Performing arts / screen","rating":"0.7","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"35"},
- {"name":"The Experience","rating":"0.7","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"30"},
- {"name":"Road Mapping","rating":"0.7","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"30"},
+    
+ {"name":"The Experience","rating":"0.7","division":"PhD Students","namelink":"http://artisticdoctorateireland.com/OER/the-artistic-research-phd-experience/", "group":"1", "size":"30"},
+ {"name":"Road Mapping","rating":"0.7","division":"PhD Students","namelink":"http://artisticdoctorateireland.com/OER/road-mapping/", "group":"1", "size":"30"},
+    
  {"name":"Developing Community","rating":"0.79","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"30"},
- {"name":"Common Challenges","rating":"0.7","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"30"},
- {"name":"The Process","rating":"0.7","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"30"},
- {"name":"Writing","rating":"0.7","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"30"},
- {"name":"Practicing","rating":"0.7","division":"PhD Students","namelink":"https://www.f.com", "group":"1", "size":"30"},
- {"name":"Performing / showing","rating":"0.7","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"30"},
+    
+ {"name":"Common Challenges","rating":"0.7","division":"PhD Students","namelink":"http://artisticdoctorateireland.com/OER/common-challenges/", "group":"1", "size":"30"},
+ {"name":"The Process","rating":"0.7","division":"PhD Students","namelink":"http://artisticdoctorateireland.com/OER/the-artistic-research-phd-process/", "group":"1", "size":"30"},
+ {"name":"Writing","rating":"0.7","division":"PhD Students","namelink":"http://artisticdoctorateireland.com/OER/writing/", "group":"1", "size":"30"},
+    
+ {"name":"Practicing","rating":"0.7","division":"PhD Students","namelink":"http://artisticdoctorateireland.com/OER/creative-practice/", "group":"1", "size":"30"},
+ 
+{"name":"Performing / showing","rating":"0.7","division":"PhD Students","namelink":"http://artisticdoctorateireland.com/OER/performing-screening/", "group":"1", "size":"30"},
+    
  {"name":"Synthesising","rating":"0.7","division":"PhD Students","namelink":"https://www.students.com", "group":"1", "size":"30"},
     
-{"name":"Students and Supervisors","rating":"0.99","division":"Students and Supervisors", "namelink":"https://www.sands.com", "group":"2", "size":"60"},
- {"name":"Supervision","rating":"0.55","division":"Students and Supervisors","namelink":"https://www.sands.com", "group":"2", "size":"35"},
- {"name":"Supervision Strategies for Candidates","rating":"0.55","division":"Students and Supervisors","namelink":"https://www.sands.com", "group":"2", "size":"35"},
- {"name":"Supervision Strategies for Supervisors","rating":"0.55","division":"Students and Supervisors","namelink":"https://www.sands.com", "group":"2", "size":"35"},
- {"name":"Bibliography of Artistic Research","rating":"0.55","division":"Students and Supervisors","namelink":"https://www.sands.com", "group":"2", "size":"35"},
- {"name":"Examination","rating":"0.55","division":"Students and Supervisors","namelink":"https://www.sands.com", "group":"2", "size":"35"},
- {"name":"Strategies for Students","rating":"0.55","division":"Students and Supervisors","namelink":"https://www.sands.com", "group":"2", "size":"35"},
- {"name":"Considerations for Staff","rating":"0.55","division":"Students and Supervisors","namelink":"https://www.sands.com", "group":"2", "size":"35"},
- {"name":"The Process","rating":"0.55","division":"Students and Supervisors","namelink":"https://www.sands.com", "group":"2", "size":"35"},
+    {"name":"Bibliography of Artistic Research","rating":"0.55","division":"PhD Students","namelink":"http://artisticdoctorateireland.com/OER/bibliography-of-artistic-research/", "group":"1", "size":"30"},
+    
+{"name":"Students and Supervisors","rating":"0.99","division":"Students and Supervisors", "namelink":"http://artisticdoctorateireland.com/OER/for-supervisors/", "group":"2", "size":"60"},
+    
+ {"name":"Supervision","rating":"0.55","division":"Students and Supervisors","namelink":"http://artisticdoctorateireland.com/OER/challenges-of-supervision/", "group":"2", "size":"35"},
+    
+ {"name":"Supervision Strategies for Candidates","rating":"0.55","division":"Students and Supervisors","namelink":"http://artisticdoctorateireland.com/OER/supervision-strategies-for-candidates/", "group":"2", "size":"35"},
+ {"name":"Supervision Strategies for Supervisors","rating":"0.55","division":"Students and Supervisors","namelink":"http://artisticdoctorateireland.com/OER/strategies-for-artistic-research-phd-supervision/", "group":"2", "size":"35"},
+ {"name":"Bibliography of Artistic Research","rating":"0.55","division":"Students and Supervisors","namelink":"http://artisticdoctorateireland.com/OER/bibliography-of-artistic-research/", "group":"2", "size":"35"},
+ {"name":"Examination","rating":"0.55","division":"Students and Supervisors","namelink":"http://artisticdoctorateireland.com/OER/examination-strategies-for-candidates/", "group":"2", "size":"35"},
+ {"name":"Strategies for Students","rating":"0.55","division":"Students and Supervisors","namelink":"http://artisticdoctorateireland.com/OER/supervision-strategies-for-candidates/", "group":"2", "size":"35"},
+    
+ {"name":"Considerations for Staff","rating":"0.55","division":"Students and Supervisors","namelink":"http://artisticdoctorateireland.com/OER/examination-considerations-for-staff/", "group":"2", "size":"35"},
+    
+ {"name":"The Process","rating":"0.55","division":"Students and Supervisors","namelink":"http://artisticdoctorateireland.com/OER/ensuring-success-supportive-processes-for-students-and-supervisors/", "group":"2", "size":"35"},
   
-{"name":"Institutions","rating":"0.99","division":"Institutions","namelink":"https://www.institutions.com", "group":"3", "size":"60"},
- {"name":"Handbook & Regulations","rating":"0.4","division":"Institutions","namelink":"https://www.institutions.com", "group":"3", "size":"27"},
- {"name":"Enhancement Rec. ","rating":"0.8","division":"Institutions","namelink":"https://www.institutions.com", "group":"3", "size":"27"},
- {"name":"Employability","rating":"0.4","division":"Institutions","namelink":"https://www.institutions.com", "group":"3", "size":"27"},
- {"name":"Training for Students","rating":"0.4","division":"Institutions","namelink":"https://www.institutions.com", "group":"3", "size":"27"},
- {"name":"Action: Induction Day","rating":"0.4","division":"Institutions","namelink":"https://www.institutions.com", "group":"3", "size":"27"},
- {"name":"Action: Developing Milestones","rating":"0.4","division":"Institutions","namelink":"https://www.institutions.com", "group":"3", "size":"27"},
- {"name":"Ensuring Success","rating":"0.4","division":"Institutions","namelink":"https://www.institutions.com", "group":"3", "size":"27"}
+{"name":"Institutions","rating":"0.99","division":"Institutions","namelink":"http://artisticdoctorateireland.com/OER/for-institutions/", "group":"3", "size":"60"},
+ {"name":"Handbook & Regulations","rating":"0.4","division":"Institutions","namelink":"http://artisticdoctorateireland.com/OER/handbook-and-regulations-developing-clear-policies-for-students/", "group":"3", "size":"27"},
+ {"name":"Enhancement Reccommendations ","rating":"0.8","division":"Institutions","namelink":"http://artisticdoctorateireland.com/OER/recommendations-for-enhancement-of-artistic-research-doctoral-programmes/", "group":"3", "size":"27"},
+ {"name":"Employability","rating":"0.4","division":"Institutions","namelink":"http://artisticdoctorateireland.com/OER/employability/", "group":"3", "size":"27"},
+ {"name":"Training for Students","rating":"0.4","division":"Institutions","namelink":"http://artisticdoctorateireland.com/OER/training-for-students/", "group":"3", "size":"27"},
+ {"name":"Action: Induction Day","rating":"0.4","division":"Institutions","namelink":"http://artisticdoctorateireland.com/OER/proposals-for-action-induction-day/", "group":"3", "size":"27"},
+ {"name":"Action: Developing Milestones","rating":"0.4","division":"Institutions","namelink":"http://artisticdoctorateireland.com/OER/proposals-for-action-developing-course-milestones/m", "group":"3", "size":"27"},
+    {"name":"Bibliography of Artistic Research","rating":"0.55","division":"Institutions","namelink":"http://artisticdoctorateireland.com/OER/bibliography-of-artistic-research/", "group":"3", "size":"27"},
+ {"name":"Ensuring Success","rating":"0.4","division":"Institutions","namelink":"http://artisticdoctorateireland.com/OER/ensuring-success-supportive-processes-for-students-and-supervisors/", "group":"3", "size":"27"}
 ]
