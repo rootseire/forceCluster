@@ -265,7 +265,19 @@ function tick(e) {
     nodeText.each(cluster(10 * e.alpha * e.alpha))
         .each(collide(.5))
         .attr("transform", function (d) {
-            var k = "translate(" + d.x + "," + d.y + ")";
+        
+        if((d.texts == "PhD Students")){
+            var k = "translate(" + d.x + "," + (d.y-5) + ")";
+           }else if((d.texts == "Students and Supervisors")){
+              var k = "translate(" + d.x + "," + (d.y-26) + ")";
+            }else if((d.texts == "Considerations for Staff")){
+               var k = "translate(" + d.x + "," + (d.y-15) + ")";
+            
+           }else if((d.texts == "Institutions")){
+              var k = "translate(" + d.x + "," + (d.y-15) + ")";
+           }else{
+              var k = "translate(" + d.x + "," + d.y + ")";
+           }
         return k;
     });
     

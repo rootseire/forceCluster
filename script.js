@@ -95,7 +95,7 @@ var nodeText = svg.selectAll(".nodeText")
         words = text.text().split(/\s+/).reverse(),
         word,
         line = [],
-        lineNumber = 0,
+        lineNumber = -1,
         lineHeight = 1.1, // ems
         y = text.attr("y"),
         dy = parseFloat(text.attr("dy")),
