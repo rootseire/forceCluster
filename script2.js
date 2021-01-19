@@ -6,7 +6,7 @@
 var width = 1500, 
     height = 700,
     padding = 1.5, // separation between same-color nodes
-    clusterPadding = 50, // separation between different-color nodes
+    clusterPadding = 12, // separation between different-color nodes
     maxRadius = 18;
 
 
