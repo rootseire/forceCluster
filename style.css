@@ -1,7 +1,7 @@
 /* Styles go here */
 
 body{
-  background-color:black;
+  /*background-color:black;*/
   color: blue;
 }
 text {
@@ -21,4 +21,8 @@ text {
 
 fill: #551A8B!important;
     
+}
+.pool {
+    fill: #3db1ff;
+    stroke: #4f4f4f;
 }
