@@ -43,8 +43,9 @@
 {"name":"Selecting Examiner","rating":"0.55","division":"Students and Supervisors","namelink":"http://www.artisticdoctorateresources.com/selecting-an-examiner/", "hover":"exam", "group":"2", "size":"27"},
 {"name":"Challenges in Examination","rating":"0.55","division":"Students and Supervisors","namelink":"http://www.artisticdoctorateresources.com/challenges-in-artistic-research-doctorates-examination/", "hover":"exam", "group":"2", "size":"27"},
 {"name":"Resources for Examiners","rating":"0.55","division":"Students and Supervisors","namelink":"http://www.artisticdoctorateresources.com/resources-for-examiners/", "hover":"exam", "group":"2", "size":"27"},
-{"name":"Employability","rating":"0.4","division":"Students and Supervisors","namelink":"http://www.artisticdoctorateresources.com/employability/", "hover":"exam", "group":"2", "size":"27"},
-{"name":"Bibliography of Artistic Research","rating":"0.55","division":"Students and Supervisors","namelink":"http://www.artisticdoctorateresources.com/bibliography-of-artistic-research/", "biblio":"new", "hover":"exam", "group":"2", "size":"27"}, 
+ 
+{"name":"Employability","rating":"0.4","division":"Students and Supervisors","namelink":"http://www.artisticdoctorateresources.com/employability/", "hover":"exam", "group":"2", "size":"35"},
+{"name":"Bibliography of Artistic Research","rating":"0.55","division":"Students and Supervisors","namelink":"http://www.artisticdoctorateresources.com/bibliography-of-artistic-research/", "biblio":"new", "hover":"exam", "group":"2", "size":"35"}, 
 
  
  
