@@ -43,9 +43,10 @@ var nodes = [];
             var e = obj['namelink'];		// namelink
             var g = obj['group'];
             var h = obj['hover'];
+            var bibs = obj['biblio'];
 			var div = obj['division'];
             cs.push(obj['group']);// division
-			d = {cluster: div, radius: r, name: n, namelink: e, division: div, rating: rating, group: g, hover: h};
+			d = {cluster: div, radius: r, name: n, namelink: e, division: div, rating: rating, group: g, hover: h, biblio: bibs};
 			// d = {cluster: div, radius: r};
 			// console.log(key+"="+obj[key]);
 		} 
@@ -252,6 +253,7 @@ function create_nodes(data,node_counter) {
         texts: data[node_counter].name,
         links: data[node_counter].namelink,  
         hovers: data[node_counter].hover,  
+        biblios: data[node_counter].bibs,  
         x: Math.cos(i / m * 2 * Math.PI) * 200 + width / 2 + Math.random(),
         y: Math.sin(i / m * 2 * Math.PI) * 200 + height / 2 + Math.random()
       };
@@ -392,103 +394,166 @@ var yourAnswer = d3.selectAll("circle")
     .filter(function(d) { 
         return d.hovers == 'red';})
 .on("mouseover", handleMouseOver)
-.on("mouseout", handleMouseOut)
-;    
-       
+.on("mouseout", handleMouseOut);    
+    
 function handleMouseOver(){   
-    
-    var arrayHovers = {a: "red", b: "pink", c: "blue" } ; 
-    for (var key in arrayHovers) {
-  //console.log("key " + key + " has value " + arrayHovers[key]);
-}
-    
-    console.log(arrayHovers['a']);
     yourAnswer.each(function() {
  d3.select(this).transition()
    .duration('50')
    .style('fill', 'red');
-}); 
-}
+});}
  
 function handleMouseOut(){       
 yourAnswer.each(function() {
  d3.select(this).transition()
    .duration('50')
    .style('fill', '#96afc8');
-}); 
-}  
+});}  
   
+    
+    
 //PhD Students Sub-level Circles  
 var yourAnswer2 = d3.selectAll("circle")
     .filter(function(d) { 
         return d.hovers == 'blue';})
 .on("mouseover", handleMouseOver2)
-.on("mouseout", handleMouseOut2)
-;    
+.on("mouseout", handleMouseOut2);    
        
 function handleMouseOver2(){   
-     yourAnswer2.each(function() {
+yourAnswer2.each(function() {
  d3.select(this).transition()
    .duration('50')
-   .style('fill', '#AFC896');
-}); 
-}
+   .style('fill', '#AFC896');});}
  
 function handleMouseOut2(){       
 yourAnswer2.each(function() {
  d3.select(this).transition()
    .duration('50')
-   .style('fill', '#96afc8');
-}); 
-}  
+   .style('fill', '#96afc8');});}  
+    
+    
+    
     
 //PhD Students Sub-sub-level Circles  
 var yourAnswer3 = d3.selectAll("circle")
     .filter(function(d) { 
-        return d.hovers == 'silver';})
+        return d.hovers == 'purple';})
 .on("mouseover", handleMouseOver3)
-.on("mouseout", handleMouseOut3)
-;    
+.on("mouseout", handleMouseOut3);    
        
 function handleMouseOver3(){   
      yourAnswer3.each(function() {
  d3.select(this).transition()
    .duration('50')
-   .style('fill', '#969696');
-}); 
-}
+   .style('fill', '#969696');});}
  
 function handleMouseOut3(){       
 yourAnswer3.each(function() {
  d3.select(this).transition()
    .duration('50')
-   .style('fill', '#96afc8');
-}); 
-}      
+   .style('fill', '#96afc8');});}      
+   
+    
     
 //PhD Students Sub-sub-level Circles  
 var yourAnswer4 = d3.selectAll("circle")
     .filter(function(d) { 
-        return d.hovers == 'purple';})
+        return d.hovers == 'silver';})
 .on("mouseover", handleMouseOver4)
-.on("mouseout", handleMouseOut4)
-;    
+.on("mouseout", handleMouseOut4);    
        
 function handleMouseOver4(){   
      yourAnswer4.each(function() {
  d3.select(this).transition()
    .duration('50')
-   .style('fill', '#7a49a5');
-}); 
-}
+   .style('fill', '#7a49a5');});}
  
 function handleMouseOut4(){       
 yourAnswer4.each(function() {
  d3.select(this).transition()
    .duration('50')
-   .style('fill', '#96afc8');
-}); 
-}          
+   .style('fill', '#96afc8');});}
+ 
     
+    
+    
+//Students and Supervisors Sub-level Circles  
+var yourAnswer5 = d3.selectAll("circle")
+    .filter(function(d) { 
+        return d.hovers == 'lilac';})
+.on("mouseover", handleMouseOver5)
+.on("mouseout", handleMouseOut5);    
+       
+function handleMouseOver5(){   
+     yourAnswer5.each(function() {
+ d3.select(this).transition()
+   .duration('50')
+   .style('fill', '#AFC896');});}
+ 
+function handleMouseOut5(){       
+yourAnswer5.each(function() {
+ d3.select(this).transition()
+   .duration('50')
+   .style('fill', '#EEEEEB');});}  
+    
+//Examiners
+var yourAnswer6 = d3.selectAll("circle")
+    .filter(function(d) { 
+        return d.hovers == 'exam';})
+.on("mouseover", handleMouseOver6)
+.on("mouseout", handleMouseOut6);    
+       
+function handleMouseOver6(){   
+     yourAnswer6.each(function() {
+ d3.select(this).transition()
+   .duration('50')
+   .style('fill', '#A1A196');});}
+ 
+function handleMouseOut6(){       
+yourAnswer6.each(function() {
+ d3.select(this).transition()
+   .duration('50')
+   .style('fill', '#EEEEEB');});}  
+
+//institutions
+var yourAnswer7 = d3.selectAll("circle")
+    .filter(function(d) { 
+        return d.hovers == 'inst';})
+.on("mouseover", handleMouseOver7)
+.on("mouseout", handleMouseOut7);    
+       
+function handleMouseOver7(){   
+     yourAnswer7.each(function() {
+ d3.select(this).transition()
+   .duration('50')
+   .style('fill', '#AFC896');});}
+ 
+function handleMouseOut7(){       
+yourAnswer7.each(function() {
+ d3.select(this).transition()
+   .duration('50')
+   .style('fill', '#DDC9DE');});}  
+
+//now handle the biblio
+var yourAnswer8 = d3.selectAll("circle")
+    .filter(function(d) { 
+        return d.biblios == 'new';})
+.on("mouseover", handleMouseOver8)
+.on("mouseout", handleMouseOut8);    
+       
+function handleMouseOver8(){   
+     yourAnswer8.each(function() {
+          console.log(d.biblios);
+ d3.select(this).transition()
+   .duration('50')
+   .style('fill', '#AFC896');});}
+ 
+function handleMouseOut8(){       
+yourAnswer8.each(function() {
+ d3.select(this).transition()
+   .duration('50')
+   .style('fill', '#DDC9DE');});}      
+    
+       
 
 });
