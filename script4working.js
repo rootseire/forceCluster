@@ -86,19 +86,19 @@ function gravity(alpha) {
     	
 
 
-//var svg = d3.select(".layoutContainer").append("svg")
-var svg = d3.select(".wpd3-307-0").append("svg")  
+var svg = d3.select(".layoutContainer").append("svg")
+//var svg = d3.select(".wpd3-307-0").append("svg")  
 .attr("viewBox", '0 0 1500 800');
     
 var aspect = width / height,
-    chart = d3.select('.wpd3-307-0')
+    chart = d3.select('.layoutContainer')
     width2 = 0;
     
 
  
   
-//var theWidth = parseInt(d3.select('.layoutContainer').style('width'), 10);
-var theWidth = parseInt(d3.select('.wpd3-307-0').style('width'), 10);
+var theWidth = parseInt(d3.select('.layoutContainer').style('width'), 10);
+//var theWidth = parseInt(d3.select('.wpd3-307-0').style('width'), 10);
 
     
 
