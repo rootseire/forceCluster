@@ -12,7 +12,7 @@ var width = 1500,
 // get the json data from the file
 //http://www.artisticdoctorateresources.com/wp-content/uploads/2021/01/Between_History_of_Humanitarianism_and_H.pdf
 //d3.json("http://www.artisticdoctorateresources.com/wp-content/uploads/2021/01/r-1.json", function(error, data) {
-d3.json("r.json", function(error, data) {
+d3.json("r-1.json", function(error, data) {
 var cs = [];
 var color = d3.scale.ordinal()
      //.domain([data])
